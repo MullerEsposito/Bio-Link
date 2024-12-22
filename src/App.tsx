@@ -1,4 +1,5 @@
-import { Home } from './pages/IndexHome'
+import React from 'react';
+import { Home } from "./pages/indexhome";
 
 
 export function App() {

@@ -1,5 +1,7 @@
+import React from "react"
 import { HomeContainer, Boxmain } from "./StylesHome"
-import profileimg from "../images/profileimg.jpg"
+import  profileimg  from "../images/profileimg.jpg"
+
 
 
 
