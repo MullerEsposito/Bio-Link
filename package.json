@@ -7,9 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "build-for-devtools": "comando-para-construir-para-devtools"
-  },
+    "preview": "vite preview"
+ },
   "dependencies": {
     "phosphor-react": "^1.4.1",
     "react": "^18.3.1",
