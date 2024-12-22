@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
+
     background-color: rgb(255, 255, 255);
     background-position-x: 50%;
     background-position-y: 50%;
@@ -556,6 +557,8 @@ export const Boxmain = styled.div`
         width: 100%;
         -webkit-font-smoothing: antialiased;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+       
     
         border: solid 3px red; 
 
@@ -730,7 +733,7 @@ export const Boxmain = styled.div`
 
     }
 
-    #text-button {
+    #content-first-button {
         
         border-bottom-color: rgb(0, 0, 0);
         border-bottom-style: none;
@@ -799,6 +802,85 @@ export const Boxmain = styled.div`
        
 
     }
+
+      #text-button-first {
+
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: block;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 24px;
+        hyphens: none;
+        letter-spacing: normal;
+        line-height: 24px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+        margin-inline-end: 0px;
+        margin-inline-start: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        position: relative;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        unicode-bidi: isolate;
+        width: 448px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        font-family: "Molle", serif;
+        font-weight: 600;
+        font-style: italic;
+        .molle-regular-italic {
+       }
+
+      }
     
     #box-icon-first {
 
@@ -885,6 +967,84 @@ export const Boxmain = styled.div`
 
 }
 
+    #icon-ebook {
+        
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: block;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 48px;
+        hyphens: auto;
+        letter-spacing: normal;
+        line-height: 16px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: initial;
+        overflow-clip-margin: content-box;
+        overflow-wrap: break-word;
+        overflow-x: clip;
+        overflow-y: clip;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        pointer-events: none;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        width: 48px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    }
+
     #second-line {
        
        background-color: rgb(235, 238, 241);
@@ -954,8 +1114,415 @@ export const Boxmain = styled.div`
        -webkit-font-smoothing: antialiased;
        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
+       font-family: "Molle", serif;
+        font-weight: 600;
+        font-style: italic;
+        .molle-regular-italic {
+       }
+
       border: solid 3px red;
     
+    }
+
+    #button-second-link {
+       
+       align-items:flex-start;
+       appearance: none;
+       background-attachment: scroll;
+       background-clip: border-box;
+       background-color: rgba(0, 0, 0, 0);
+       background-image: none;
+       background-origin: padding-box;
+       background-position-x: 0%;
+       background-position-y: 0%;
+       background-repeat: repeat;
+       background-size: auto;
+       border-bottom-color: rgb(0, 0, 0);
+       border-bottom-style: none;
+       border-bottom-width: 0px;
+       border-image-outset: 0;
+       border-image-repeat: stretch;
+       border-image-slice: 100%;
+       border-image-source: none;
+       border-image-width: 1;
+       border-left-color: rgb(0, 0, 0);
+       border-left-style: none;
+       border-left-width: 0px;
+       border-right-color: rgb(0, 0, 0);
+       border-right-style: none;
+       border-right-width: 0px;
+       border-top-color: rgb(0, 0, 0);
+       border-top-style: none;
+       border-top-width: 0px;
+       box-sizing: border-box;
+       color: rgb(0, 0, 0);
+       cursor: pointer;
+       display: block;
+       font-family: Inter, sans-serif;
+       font-feature-settings: normal;
+       font-kerning: auto;
+       font-optical-sizing: auto;
+       font-size: 16px;
+       font-size-adjust: none;
+       font-stretch: 100%;
+       font-style: normal;
+       font-variant-alternates: normal;
+       font-variant-caps: normal;
+       font-variant-east-asian: normal;
+       font-variant-ligatures: normal;
+       font-variant-numeric: normal;
+       font-variant-position: normal;
+       font-variation-settings: normal;
+       font-weight: 500;
+       height: 64px;
+       hyphens: auto;
+       letter-spacing: normal;
+       line-height: 16px;
+       margin-bottom: 0px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-top: 0px;
+       min-height: 64px;
+       overflow-wrap: break-word;
+       padding-block-end: 16px;
+       padding-block-start: 16px;
+       padding-bottom: 16px;
+       padding-inline-end: 66px;
+       padding-inline-start: 66px;
+       padding-left: 66px;
+       padding-right: 66px;
+       padding-top: 16px;
+       tab-size: 4;
+       text-align: center;
+       text-indent: 0px;
+       text-rendering: auto;
+       text-shadow: none;
+       text-size-adjust: 100%;
+       text-transform: none;
+       transition-delay: 0s, 0s, 0s, 0s;
+       transition-duration: 0.25s, 0.25s, 0.25s, 0.25s;
+       transition-property: box-shadow, border-color, transform, background-color;
+       transition-timing-function: cubic-bezier(0.08, 0.59, 0.29, 0.99), cubic-bezier(0.08, 0.59, 0.29, 0.99), cubic-bezier(0.08, 0.59, 0.29, 0.99), cubic-bezier(0.08, 0.59, 0.29, 0.99);
+       width: 580px;
+       word-break: break-word;
+       word-spacing: 0px;
+       -webkit-font-smoothing: antialiased;
+       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   
+
+
+    }
+
+    #content-second-button {
+        
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: block;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 24px;
+        hyphens: auto;
+        letter-spacing: normal;
+        line-height: 16px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        unicode-bidi: isolate;
+        width: 448px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+       
+
+    }
+
+      #text-button-second {
+
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: block;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 24px;
+        hyphens: none;
+        letter-spacing: normal;
+        line-height: 24px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+        margin-inline-end: 0px;
+        margin-inline-start: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        position: relative;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        unicode-bidi: isolate;
+        width: 448px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        font-family: "Molle", serif;
+        font-weight: 600;
+        font-style: italic;
+        .molle-regular-italic {
+       }
+
+      }
+    
+    #box-icon-second {
+
+        align-items: center;
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 48px;
+        hyphens: auto;
+        justify-content: center;
+        left: 8px;
+        letter-spacing: normal;
+        line-height: 16px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        pointer-events: none;
+        position: absolute;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        top: 32px;
+        transform: matrix(1, 0, 0, 1, 0, -24);
+        unicode-bidi: isolate;
+        vertical-align: baseline;
+        width: 48px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   
+
+}
+
+    #icon-whatsapp {
+        
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 0, 0);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(0, 0, 0);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(0, 0, 0);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-style: none;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: block;
+        font-family: Inter, sans-serif;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-size-adjust: none;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-variation-settings: normal;
+        font-weight: 500;
+        height: 48px;
+        hyphens: auto;
+        letter-spacing: normal;
+        line-height: 16px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: initial;
+        overflow-clip-margin: content-box;
+        overflow-wrap: break-word;
+        overflow-x: clip;
+        overflow-y: clip;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        pointer-events: none;
+        tab-size: 4;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        width: 48px;
+        word-break: break-word;
+        word-spacing: 0px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     }
 
     #third-line {
@@ -1026,6 +1593,12 @@ export const Boxmain = styled.div`
        z-index: 0;
        -webkit-font-smoothing: antialiased;
        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+       font-family: "Molle", serif;
+        font-weight: 600;
+        font-style: italic;
+        .molle-regular-italic {
+       }
 
       border: solid 3px red;
     
@@ -1099,6 +1672,12 @@ export const Boxmain = styled.div`
        z-index: 0;
        -webkit-font-smoothing: antialiased;
        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+       font-family: "Molle", serif;
+        font-weight: 600;
+        font-style: italic;
+        .molle-regular-italic {
+       }
 
       border: solid 3px red;
     
