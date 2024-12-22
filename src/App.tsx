@@ -1,10 +1,10 @@
+import { Home } from './pages/IndexHome'
+
 
 export function App() {
 
   return (
-    <>
-    hellow mateus
-    </>
+      <Home/>
   )
 }
 
