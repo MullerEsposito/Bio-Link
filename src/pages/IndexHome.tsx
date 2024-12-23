@@ -12,41 +12,39 @@ import iconinsta from "../images/iconinsta.jpg"
 
 
 export function Home () {
+      
+      // função de animação de onda
     
       const WaveText = () => {
+
+      
         return (
-            <div style={styles.container}>
-                {Array.from("Texto em onda").map((char, index) => (
-                    <span key={index} style={{ ...styles.letter, animationDelay: `${index * 0.1}s` }}>
-                        {char}
+            <div className="text-description-profile">
+                {Array.from("LoLa Links").map((char, index) => (
+                    <span key={index} style={{ display: 'inline-block', animation: 'wave 1s ease-in-out infinite', animationDelay: `${index * 0.1}s` }}>
+                        {char === ' ' ? '\u00A0' : char} {/* Adiciona um espaço não quebrável */}
                     </span>
                 ))}
             </div>
         );
     };
+    
 
-    const styles = {
-        container: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontSize: '2rem',
-            fontWeight: 'bold',
-        },
-        letter: {
-            display: 'inline-block',
-            animation: 'wave 1s ease-in-out infinite',
-        },
+    // Adicione a regra @keyframes diretamente ao head do documento
+    const addKeyframes = () => {
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(`
+            @keyframes wave {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+        `));
+        document.head.appendChild(style);
     };
 
-    // Adicione a regra @keyframes globalmente
-    const styleSheet = document.styleSheets[0];
-    styleSheet.insertRule(`
-        @keyframes wave {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-    `, styleSheet.cssRules.length);
+    // Chame a função para adicionar os keyframes
+    addKeyframes();
 
 
     return (
@@ -60,7 +58,9 @@ export function Home () {
                         </div>
                         <div id="box-description-profile">
                             
-                            <h1 id="text-description-profile" > Lola links </h1>
+                            <h1 id="text-description-profile" > <WaveText/>
+                             
+                            </h1>
                             
                             
                         </div>

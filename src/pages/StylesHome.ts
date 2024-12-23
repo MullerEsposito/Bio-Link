@@ -488,7 +488,9 @@ export const Boxmain = styled.div`
         -webkit-font-smoothing: antialiased;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-       
+        letter-spacing: 0.3rem;
+
+
         font-family: "Molle", serif;
         font-weight: 600;
         font-style: italic;
