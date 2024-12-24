@@ -7,11 +7,26 @@ import iconyoutube from "../images/iconyoutube.png"
 import icontiktok2 from "../images/icontiktok2.png"
 import iconacha from "../images/iconacha.jpg"
 import iconinsta from "../images/iconinsta.jpg"
+import { Heart } from "phosphor-react"
+import { IconWeight } from "phosphor-react"
+import { ContactButton } from "../components/ContactButton"
 
+
+  //função de icones do phosphor-react 
+
+  const HeartIcon = ({ size = 48, color = "#FF0000", weight = "fill" as IconWeight }) => {
+    return (
+      <Heart size={size} color={color} weight={weight} />
+    );
+  };
+
+  export default HeartIcon;
 
 
 
 export function Home () {
+
+
       
       // função de animação de onda
     
@@ -46,6 +61,7 @@ export function Home () {
     // Chame a função para adicionar os keyframes
     addKeyframes();
 
+   
 
     return (
         <HomeContainer>
@@ -67,75 +83,37 @@ export function Home () {
                     </div>
                     {/*primeira linha da caixa de links ... */}
                     <div id="boxlinks"> 
-                        <div id="first-line">
-                          <button id="button-first-link" onClick={()=> window.open('https://hotmart.com/pt-br/marketplace/produtos/introducao-alimentar-de-forma-leve/U88019896P?fbclid=PAZXh0bgNhZW0CMTEAAabiI7tvFHjh7ICoN2M93mzpKSusq8kqTPpDiF8VS5oRIHxNOO145SOQqP0_aem_IDCSbH753lIAzsSqw0QlGw', '_blank')}>
-                            <div id="content-first-button">
-                              <div id="box-icon-first">
-                                <img id="icon-ebook" src={ebookicon} alt="icone do ebook"></img>
-                              </div>  
-                              <p id="text-button-first"> Ebook Introdução Alimentar de forma leve </p> 
-                            </div> 
-                          </button>
-                        </div>
-                       
-                        {/* segunda linha da caixa de links ... */}
+                        <ContactButton 
+                          text="Ebook Introdução Alimentar de forma leve"
+                          icon={ebookicon}
+                          link="https://hotmart.com/pt-br/marketplace/produtos/introducao-alimentar-de-forma-leve/U88019896P?fbclid=PAZXh0bgNhZW0CMTEAAabiI7tvFHjh7ICoN2M93mzpKSusq8kqTPpDiF8VS5oRIHxNOO145SOQqP0_aem_IDCSbH753lIAzsSqw0QlGw"
+                        />
 
-                        <div id="second-line">
-                          <button id="button-second-link" onClick={()=> window.open('https://chat.whatsapp.com/L6jzf9WgMOUG6ZzyQF6gaW?fbclid=PAZXh0bgNhZW0CMTEAAaaUdY_lzS1D3o4vEPzlUBEI6zprFxnTvQllax_UlTjC_VRloVKBX-jt7Qc_aem_JEx4SmiUCFz_6ZI3cPosgQ', '_blank')}>
-                              <div id="content-second-button">
-                                <div id="box-icon-second">
-                                  <img id="icon-whatsapp" src={iconwhatsapp} alt="icone do ebook"></img>
-                                </div>  
-                                <p id="text-button-second"> Grupo no whatsApp de promoções </p> 
-                              </div> 
-                            </button>
+                        <ContactButton 
+                          text="Grupo no whatsApp de promoções"
+                          icon={iconwhatsapp}
+                          link="https://chat.whatsapp.com/L6jzf9WgMOUG6ZzyQF6gaW?fbclid=PAZXh0bgNhZW0CMTEAAaaUdY_lzS1D3o4vEPzlUBEI6zprFxnTvQllax_UlTjC_VRloVKBX-jt7Qc_aem_JEx4SmiUCFz_6ZI3cPosgQ"
+                        />
 
-                        </div>
-                      
+                        <ContactButton 
+                          text="Canal no Youtube"
+                          icon={iconyoutube}
+                          link="https://www.youtube.com/@lorenafarias188"
+                        />
 
-                        {/*terceira linha da caixa de links ... */}
-
-                        <div id="third-line">
-                            <button id="button-third-link" onClick={()=> window.open('https://www.youtube.com/@lorenafarias188','_blank')}>
-                              <div id="content-third-button">
-                                <div id="box-icon-third">
-                                  <img id="icon-youtube" src={iconyoutube} alt="icone do youtube"></img>
-                                </div>  
-                                <p id="text-button-third"> Canal no Youtube </p> 
-                              </div> 
-                            </button>
-
-                        </div>
-                       
-                        {/*quarta linha da caixa de links ... */}
-
-                       <div id="fourth-line">
-                            <button id="button-fourth-link" onClick={()=> window.open('https://www.tiktok.com/@lorenaafarias_','_blank')}>
-                              <div id="content-fourth-button">
-                                <div id="box-icon-fourth">
-                                  <img id="icon-tiktok" src={icontiktok2} alt="icone do tiktok"></img>
-                                </div>  
-                                <p id="text-button-fourth"> Meu Tiktok </p> 
-                              </div> 
-                            </button> 
-
-                       </div>
-
-                       {/*quinta linha da caixa de links ... */}
-                      
-                       <div id="five-line">
-                            <button id="button-five-link" onClick={()=> window.open('')}>
-                              <div id="content-five-button">
-                                <div id="box-icon-five">
-                                  <img id="icon-acha" src={iconacha} alt="icone de achadinhos"></img>
-                                </div>  
-                                <p id="text-button-five"> Achadinhos </p> 
-                              </div> 
-                            </button> 
-                       </div>
                           
-                         {/*box do icone do instagram */} 
+                        <ContactButton 
+                          text="Meu Tiktok"
+                          icon={icontiktok2}
+                          link="https://www.tiktok.com/@lorenaafarias_"
+                        />                        
 
+                        <ContactButton 
+                          text="Achadinhos"
+                          icon={iconacha}
+                          link=""
+                        />
+                          
                        <div id="containerinsta" >
                          <div id="box-primary-icon-insta" onClick={()=> window.open('https://www.instagram.com/lorenaafarias_/')}>
                             <div id="box-secondary-icon-insta">
@@ -148,6 +126,9 @@ export function Home () {
                    </div>
                    
             </div>
+          <div id="author" onClick={()=> window.open('https://www.instagram.com/lorenaafarias_/')}>
+            Feito com <HeartIcon size={32} color = "rgb(219 163 214 / 53%)"/> por Mateus Wallas
+          </div>
             
             
           </Boxmain>
