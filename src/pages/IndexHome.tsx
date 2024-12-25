@@ -1,6 +1,6 @@
 import React from "react"
-import { HomeContainer, Boxmain } from "./StylesHome"
-import  profileimg  from "../images/profileimg.jpg"
+import { Boxmain } from "./StylesHome"
+import profileimg from "../images/profileimg.jpg"
 import ebookicon from "../images/ebookicon.jpg"
 import iconwhatsapp from "../images/iconwhatsapp.jpg"
 import iconyoutube from "../images/iconyoutube.png"
@@ -9,7 +9,7 @@ import iconacha from "../images/iconacha.jpg"
 import iconinsta from "../images/iconinsta.jpg"
 import { Heart } from "phosphor-react"
 import { IconWeight } from "phosphor-react"
-import { ContactButton } from "../components/ContactButton"
+import { LinksButton } from "../components/LinkstButton"
 
 
   //função de icones do phosphor-react 
@@ -64,7 +64,6 @@ export function Home () {
    
 
     return (
-        <HomeContainer>
             <Boxmain>
                 <div id="box2">
                     {/*conteudo do cabeçalho */}
@@ -73,65 +72,67 @@ export function Home () {
                             <img id="profileimg" src={profileimg} alt="Imagem de perfil"/>
                         </div>
                         <div id="box-description-profile">
-                            
-                            <h1 id="text-description-profile" > <WaveText/>
-                             
-                            </h1>
-                            
-                            
+                          <h1 id="text-description-profile" > <WaveText/> </h1>
                         </div>
                     </div>
-                    {/*primeira linha da caixa de links ... */}
+                    {/*primeira linha da caixa de links  */}
                     <div id="boxlinks"> 
-                        <ContactButton 
+                      
+                        <LinksButton
                           text="Ebook Introdução Alimentar de forma leve"
                           icon={ebookicon}
                           link="https://hotmart.com/pt-br/marketplace/produtos/introducao-alimentar-de-forma-leve/U88019896P?fbclid=PAZXh0bgNhZW0CMTEAAabiI7tvFHjh7ICoN2M93mzpKSusq8kqTPpDiF8VS5oRIHxNOO145SOQqP0_aem_IDCSbH753lIAzsSqw0QlGw"
                         />
 
-                        <ContactButton 
+                         {/*segunda linha da caixa de links  */}
+
+
+                        <LinksButton 
                           text="Grupo no whatsApp de promoções"
                           icon={iconwhatsapp}
                           link="https://chat.whatsapp.com/L6jzf9WgMOUG6ZzyQF6gaW?fbclid=PAZXh0bgNhZW0CMTEAAaaUdY_lzS1D3o4vEPzlUBEI6zprFxnTvQllax_UlTjC_VRloVKBX-jt7Qc_aem_JEx4SmiUCFz_6ZI3cPosgQ"
                         />
 
-                        <ContactButton 
+                        {/*terceira linha da caixa de links */}
+
+                        <LinksButton 
                           text="Canal no Youtube"
                           icon={iconyoutube}
                           link="https://www.youtube.com/@lorenafarias188"
                         />
 
+                        {/*quarta linha da caixa de links  */}
+
                           
-                        <ContactButton 
+                        <LinksButton 
                           text="Meu Tiktok"
                           icon={icontiktok2}
                           link="https://www.tiktok.com/@lorenaafarias_"
-                        />                        
+                        />
 
-                        <ContactButton 
+                        {/*quinta linha da caixa de links  */}                        
+
+                        <LinksButton 
                           text="Achadinhos"
                           icon={iconacha}
                           link=""
                         />
-                          
-                       <div id="containerinsta" >
-                         <div id="box-primary-icon-insta" onClick={()=> window.open('https://www.instagram.com/lorenaafarias_/')}>
-                            <div id="box-secondary-icon-insta">
-                              <img id="icon-insta" src={iconinsta} alt="icone insta"></img>
-                            </div>
-                         </div>
-                       </div>
 
+                    </div>
 
-                   </div>
-                   
-            </div>
-          <div id="author" onClick={()=> window.open('https://www.instagram.com/lorenaafarias_/')}>
-            Feito com <HeartIcon size={32} color = "rgb(219 163 214 / 53%)"/> por Mateus Wallas
-          </div>
-            
-            
-          </Boxmain>
-      </HomeContainer>
+                        {/* link do instagram */}
+
+                        <div  id="containerinsta" >  
+                          <a href="https://www.instagram.com/lorenaafarias_/"   target='_blank'>
+                                <img id="icon-insta" src={iconinsta} alt="icone insta"></img>
+                          </a>
+                        </div>
+                </div>
+          
+                <div id="author" onClick={()=> window.open('https://www.instagram.com/m.wallas_/')}>
+                  <p>Made with <HeartIcon size={20} color = "rgb(219 163 214 / 53%)"/> by Mateus Wallas </p>
+                </div>
+             
+           </Boxmain>
     )
 }
