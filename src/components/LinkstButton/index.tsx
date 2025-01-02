@@ -1,20 +1,36 @@
-import React from 'react';
 import { LinksButtonContainer } from "./style";
-import ebookicon from "../../images/ebookicon.jpg"
+import { NavLink } from 'react-router-dom'
+
 
 interface LinksButtonProps {
     text?: string,
     icon: string,
-    link: string,
+    link?: string,
+    nav?: string | JSX.Element 
 }
 
-export function LinksButton({ text, icon, link}: LinksButtonProps) {
+export function LinksButton({ text, icon, link, nav }: LinksButtonProps) {
     return (
         <LinksButtonContainer>
-            <a href={link} target='_blank'>
-                <img src={icon} alt="icone do ebook"></img>
-                { text && <p>  {text} </p> }
-            </a>
+            { nav ?
+                <NavLink to="/pageacha" title="">
+                    <img src={icon} alt=""></img>
+                    { text && <p>  {text} </p> }
+                </NavLink>
+            :
+                <a href={link} target='_blank'>
+                    <img src={icon} alt=""></img>
+                    { text && <p>  {text} </p> }
+                </a>
+            }
         </LinksButtonContainer>
     )
 }
+
+export const navegation = () => {
+   
+    return (
+      <NavLink to="/PageAcha" title="" />
+ 
+    );
+   }

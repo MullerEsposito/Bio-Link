@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "ESNext",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": "./src", // Defina a base URL
+      "typeRoots": [
+        "./node_modules/@types",
+        "./BIO-LINK" // Inclua o diretório onde está o declarations.d.ts
+      ],
+      "jsx": "react-jsx",
+      
+    },
+    "include": [
+      "src/**/*",
+      "BIO-LINK/**/*", // Inclua o diretório BIO-LINK
+      "src/declarations.d.ts"  ],
+      
+   
+
+    "files": [],
+    "references": [
+      {"path": "./tsconfig.app.json"},
+      { "path": "./tsconfig.node.json"}
+    ]
+}
