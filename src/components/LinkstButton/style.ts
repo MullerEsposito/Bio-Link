@@ -8,6 +8,16 @@ export const LinksButtonContainer = styled.div`
     transition-timing-function: cubic-bezier(0, 0.2, 0.5, 3);
     margin-top: 2rem;
 
+    /* efeito agua */
+
+    background: rgba(255, 255, 255, 0.2); /* Fundo translúcido */
+    backdrop-filter: blur(10px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+
+
     a {
         display: flex;
         width: 100%;

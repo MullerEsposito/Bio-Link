@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
+
 export const Boxmain = styled.main`
+           
         
-        background-color: #fdf2ed;
+        background: linear-gradient(120deg, #a18cd1, #fbc2eb);
         box-sizing: border-box;
         display: flex;
         flex-basis: 0%;
@@ -194,14 +196,15 @@ export const Boxmain = styled.main`
         height: auto;
         max-width: 580px;
         width: 100%;
-        position: absolute bottom;
+        position: absolute bottom 10px;
         margin: auto;
 
         
         p {
          
             padding-left: 1.5rem;
-
+            cursor: pointer;
+            
             font-size: x-small;
             font-family: "Molle", serif;
             font-weight: 400;
