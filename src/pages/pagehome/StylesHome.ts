@@ -106,6 +106,11 @@ export const Boxmain = styled.main`
         border-top-right-radius: 9999px;
         border-bottom-left-radius: 9999px;
         border-bottom-right-radius: 9999px;
+        background: linear-gradient(to right, #1d0e31, #c7a8dd);
+        box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.5);
+        border: solid #331255;
+        border-image: linear-gradient(to right, #331255, #c09cd9);
+        border-image-slice: 1;
     }        
      
      #box-description-profile {
@@ -143,14 +148,20 @@ export const Boxmain = styled.main`
         unicode-bidi: isolate;
         width: 173.812px;
         letter-spacing: 0.3rem;
-       
+
+        /* box-shadow: 10px 4px 9px rgba(0, 0, 0, 0.3);        */
         font-family: "Molle", serif;
         font-weight: 600;
         font-style: italic;
         .molle-regular-italic {
        }
         
+       .Letras-char {
+            box-shadow: 10px 4px 9px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
 
+
+        }
     }
 
 
@@ -178,6 +189,8 @@ export const Boxmain = styled.main`
             display: block;
             height: 3rem;
             width: 3rem;
+            box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 100%;
 
             &:hover {
        transform: scale(1.3);

@@ -14,8 +14,10 @@ export const LinksButtonContainer = styled.div`
     backdrop-filter: blur(10px) saturate(150%);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.3);
     color: #ffffff;
+
+    box-sizing: border-box;
 
 
     a {
@@ -41,6 +43,8 @@ export const LinksButtonContainer = styled.div`
         text-align: center;
         margin-right: 48px;
         color: black;
+        margin-block: auto;
+    
     }
 
     &:hover {

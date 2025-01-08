@@ -14,8 +14,7 @@ export const AchaContainerMain = styled.main`
       justify-content: center;
       font-family: Roboto, sans-serif;
 
-   background: linear-gradient(to right, #d12a8d96, #da1b60);
-
+      background-color: #353535;
 
    
 
@@ -27,8 +26,7 @@ export const AchaContainerMain = styled.main`
       flex-direction: column;
       flex-grow: 1;
       flex-shrink: 1;
-       height: 1000px;
-      justify-content: center;
+      height: 1000px;
       max-width: 1340px;
       width: 100%;
       padding-left: 1.25rem;
@@ -139,22 +137,42 @@ export const AchaContainerMain = styled.main`
 
    }
 
-   #banner {
+   #bannercontainer {
     
-    position: absolute top;
-    display: block;
-    /* background-color: transparent; */
-    max-width: 1300px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    max-height: 300px;
-    height: 300px;
-    box-sizing: border-box;
+      position: absolute top;
+      display: block;
+      max-width: 1300px;
+      width: 100%;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      max-height: 300px;
+      height: 300px;
+      box-sizing: border-box;
 
-    border: solid 2px red;
+      overflow: hidden;
+      position: relative;
+
+      background-color: #fff;
+
+      border: solid 2px red;
 
 
-   }  
+   }
+   
+   #banner img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+   
+   #banner img.active {
+
+       opacity: 1;
+      
+      
+
+   }
 
 ` 

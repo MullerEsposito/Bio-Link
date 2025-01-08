@@ -38,7 +38,9 @@ export function Home () {
         return (
             <div className="text-description-profile">
                 {Array.from("LoLa Links").map((char, index) => (
-                    <span key={index} style={{ display: 'inline-block', animation: 'wave 1s ease-in-out infinite', animationDelay: `${index * 0.1}s` }}>
+                    <span key={index}
+                      className={['L', 'o', 'a', 'i', 'n', 'k', 's'].includes(char) ? 'Letras-char' : ''} // Adiciona a classe 'L-char' se o caractere for uma das letras especificadas
+                      style={{ display: 'inline-block', animation: 'wave 1s ease-in-out infinite', animationDelay: `${index * 0.1}s` }}>
                         {char === ' ' ? '\u00A0' : char} {/* Adiciona um espaço não quebrável */}
                     </span>
                 ))}
@@ -132,7 +134,7 @@ export function Home () {
                 </div>
           
                 <div id="author" onClick={()=> window.open('https://www.instagram.com/m.wallas_/')}>
-                  <p>Made with <HeartIcon size={20} color = "rgb(219 163 214 / 53%)"/> by Mateus Wallas </p>
+                  <p>Made with <HeartIcon size={15} color = "#9c23a9"/> by Mateus Wallas </p>
                 </div>
              
            </Boxmain>

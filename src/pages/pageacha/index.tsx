@@ -1,8 +1,41 @@
 import { AchaContainerMain } from "./styles"
+import imgbanner from "../../images/imgbanner.jpg"
+import imgbannersecond from "../../images/imgbanner-2.jpg"
 
 
 
 export function PageAcha() {
+   
+    // Seleciona o contêiner do banner e todas as imagens
+    const banner = document.getElementById("bannercontainer") as HTMLElement | null;
+    const images = banner?.getElementsByTagName("img");
+
+    if (banner && images && images.length > 0) {
+    // Variável para rastrear a imagem ativa
+    let currentIndex = 0;
+
+
+    // Função para alternar as imagens
+    function changeImage(): void {
+    // Verifica se 'images' está definido antes de remover a classe "active"
+    if (images && images.length > 0) {
+        images[currentIndex].classList.remove("active");
+
+    // Verifica se 'images' está definido antes de calcular o próximo índice
+    if (images && images.length > 0) {
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Adiciona a classe "active" à próxima imagem
+        images[currentIndex].classList.add("active");
+    }
+    }
+  }
+
+  // Configura o intervalo para mudar as imagens a cada 2 segundos
+  setInterval(changeImage, 2000); 
+
+  }
+
 
     return (
 
@@ -23,8 +56,11 @@ export function PageAcha() {
             </div>
             
             <div id="box2acha" >
-              <div id="banner">
-                <img id="logolola" src={""} alt="" />
+
+              {/* banner conteiner */}
+              <div id="bannercontainer">
+                <img src={imgbanner} alt="" className="active" />
+                <img src={imgbannersecond} alt="Imagem 2" />
               </div>
             </div>
         </AchaContainerMain>
