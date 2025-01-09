@@ -149,7 +149,6 @@ export const Boxmain = styled.main`
         width: 173.812px;
         letter-spacing: 0.3rem;
 
-        /* box-shadow: 10px 4px 9px rgba(0, 0, 0, 0.3);        */
         font-family: "Molle", serif;
         font-weight: 600;
         font-style: italic;

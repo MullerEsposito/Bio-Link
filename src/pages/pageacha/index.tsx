@@ -3,40 +3,36 @@ import imgbanner from "../../images/imgbanner.jpg"
 import imgbannersecond from "../../images/imgbanner-2.jpg"
 
 
+// Estado para controlar o índice da imagem atual
+let currentBannerIndex = 0;
+
+// Função para alternar entre as imagens do banner
+function changeBannerImage(): void {
+    const bannerImages = [
+        document.getElementById("imgbanner1"),
+        document.getElementById("imgbanner2")
+    ];
+
+    if (bannerImages && bannerImages.length > 0) {
+        // Remove a classe "active" da imagem atual
+        bannerImages[currentBannerIndex]?.classList.remove("active");
+
+        // Atualiza o índice da imagem atual
+        currentBannerIndex = (currentBannerIndex + 1) % bannerImages.length;
+
+        // Adiciona a classe "active" à próxima imagem
+        bannerImages[currentBannerIndex]?.classList.add("active");
+    }
+}
+
+setInterval(() => {
+    changeBannerImage(); // Muda a imagem do banner
+}, 3000);
+
 
 export function PageAcha() {
    
-    // Seleciona o contêiner do banner e todas as imagens
-    const banner = document.getElementById("bannercontainer") as HTMLElement | null;
-    const images = banner?.getElementsByTagName("img");
-
-    if (banner && images && images.length > 0) {
-    // Variável para rastrear a imagem ativa
-    let currentIndex = 0;
-
-
-    // Função para alternar as imagens
-    function changeImage(): void {
-    // Verifica se 'images' está definido antes de remover a classe "active"
-    if (images && images.length > 0) {
-        images[currentIndex].classList.remove("active");
-
-    // Verifica se 'images' está definido antes de calcular o próximo índice
-    if (images && images.length > 0) {
-        currentIndex = (currentIndex + 1) % images.length;
-
-        // Adiciona a classe "active" à próxima imagem
-        images[currentIndex].classList.add("active");
-    }
-    }
-  }
-
-  // Configura o intervalo para mudar as imagens a cada 2 segundos
-  setInterval(changeImage, 2000); 
-
-  }
-
-
+  
     return (
 
         <AchaContainerMain>
@@ -59,8 +55,8 @@ export function PageAcha() {
 
               {/* banner conteiner */}
               <div id="bannercontainer">
-                <img src={imgbanner} alt="" className="active" />
-                <img src={imgbannersecond} alt="Imagem 2" />
+                <img src={imgbanner} alt="" id="imgbanner1" />
+                <img src={imgbannersecond} alt="" id="imgbanner2" />
               </div>
             </div>
         </AchaContainerMain>
@@ -68,3 +64,4 @@ export function PageAcha() {
     
     )
 }
+

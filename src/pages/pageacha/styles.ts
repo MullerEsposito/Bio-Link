@@ -149,8 +149,7 @@ export const AchaContainerMain = styled.main`
       height: 300px;
       box-sizing: border-box;
 
-      overflow: hidden;
-      position: relative;
+
 
       background-color: #fff;
 
@@ -158,21 +157,22 @@ export const AchaContainerMain = styled.main`
 
 
    }
-   
-   #banner img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
-   
-   #banner img.active {
+   #bannercontainer img {
+     display: none; /* Esconde todas as imagens por padrão */
+     width: 100%; 
+     height: 100%;
+     opacity: 0;
 
-       opacity: 1;
-      
-      
+    transform: translate3d(0px, 0px, 0px);
+    transition: -webkit-transform 700ms;
+    transition-timing-function: ease;
+   }
+   
 
+   #bannercontainer img.active {
+     display: block; /* Mostra apenas a imagem com a classe "active" */
+     opacity: 1;
    }
 
 ` 
+
