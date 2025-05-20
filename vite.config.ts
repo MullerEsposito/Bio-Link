@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import { fileURLToPath } from 'url'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,4 +15,10 @@ export default defineConfig({
     minify: 'esbuild',
     sourcemap: true,
   },
+  resolve: {
+    alias: {
+      "@images": fileURLToPath(new URL("src/images", import.meta.url)),
+      "@components": fileURLToPath(new URL("src/components", import.meta.url)),
+    }
+  }
 })
